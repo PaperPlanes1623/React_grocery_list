@@ -15,7 +15,7 @@ const Item = ({id, name, price, complete, handleClick}) => (
     style={ complete ? {...styles.item, ...styles.complete } : styles.item }
     onClick={ () => handleClick(id) }
   >
-    {name}, {price}
+    {name}, ${price}
   </li>
 )
 

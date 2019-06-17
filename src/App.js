@@ -7,9 +7,9 @@ import List from './components/List';
 class App extends Component {
   state = { 
     items: [
-      {  id: 1, name: 'Chicken', price: '$5.00', complete: true },
-      {  id: 2, name: 'Potato', price: '$1.00', complete: false },
-      {  id: 3, name: 'Rice', price: '$4.00', complete: false }
+      {  id: 1, name: 'Chicken', price: '5.00', complete: true },
+      {  id: 2, name: 'Potato', price: '1.00', complete: false },
+      {  id: 3, name: 'Rice', price: '4.00', complete: false }
     ] 
   }
 
