@@ -10,12 +10,12 @@ const styles = {
   }
 }
 
-const Item = ({id, name, complete, handleClick}) => (
+const Item = ({id, name, price, complete, handleClick}) => (
   <li
     style={ complete ? {...styles.item, ...styles.complete } : styles.item }
     onClick={ () => handleClick(id) }
   >
-    {name}
+    {name}, {price}
   </li>
 )
 
