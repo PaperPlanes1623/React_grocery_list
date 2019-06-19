@@ -22,9 +22,9 @@ class App extends Component {
    }
 
   addItem = (name, price) => {
-    const { items } = this.state
-    const newItem =  { id: this.getUniqId(), name, price, complete: false }
-    this.setState({ items: [newItem, ...items] })
+    const { items } = this.state;
+    const newItem = { id: this.getUniqId(), name, price, complete: false }
+    this.setState({ items: [newItem, ...items]});
   }
 
   handleClick = (id) => {

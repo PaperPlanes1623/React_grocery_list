@@ -4,18 +4,15 @@ class ItemForm extends Component {
   state = { name: '', price: ''}
 
   handleChange = (e) => {
-    const { name, price,  value } = e.target
+    const { name, price, value } = e.target
     this.setState({ [name]: value })
   }
 
+
   handleSubmit = (e) => {
-    //stop page from reloading
     e.preventDefault();
-    //add item to groceries array
     this.props.addItem(this.state.name, this.state.price)
-    // this.props.addItem(this.state.price)
-    //clear form on submit
-    this.setState({name: '', price: ''})
+    this.setState({ name: '', price: ''})
   }
 
 
@@ -31,13 +28,14 @@ class ItemForm extends Component {
         />
         <br />
          <input  
+         required
         placeholder='add price (optional)' 
-        price="price" 
+        name="price" 
         value={this.state.price}
         onChange={this.handleChange}
         />
         <br />
-        <input class = "btn btn-primary" type = "submit" value = "Submit" />
+        <input class = "btn btn-primary" type = "submit" value = "Add" />
       </form>
     )
   }

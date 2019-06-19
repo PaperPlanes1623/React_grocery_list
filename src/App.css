@@ -1,5 +1,7 @@
 .text-primary {
   text-align: center;
+  margin: auto;
+  padding: 5px;
 }
 
 ul {
